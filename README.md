@@ -40,8 +40,6 @@ $log = Read-Host "`nPlease provide the location to store log file"
 
 $location = "$log\Log_$a.txt"
 
-The script can be found in the github repository.
-
 To execute the script follow the below mentioned steps,
 1. Store the script (CollectLog.ps1) in a local directory (C:\Exchange_Log) of the exchange server
 2. Change the directory to the location where the script was stored (Can use Exchange Management Shell or Power shell)
