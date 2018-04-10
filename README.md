@@ -21,16 +21,23 @@ If the user input wrong value for the above selection, the script will terminate
 After selecting the correct preference, the script will ask for the user input related to the "sender" and "recipient" mail address depending on the selected preference.
 
 The user only need to input the first part of the mail address only (no need to mention @...., as it is concatenated with the sender/recipient name).
+
 $sender = Read-Host 
+
 $sender = "$sender@example5.com"
 
 Another feature added to this script is that the user/admin can capture the output on the screen itself or capture it on the text file, so that he can used to send/store the logs whenever needed.Text logs are named depending on the current time when it was created.
+
 $a=Get-Date -Format G
+
 $a=$a.replace("/","_")
+
 $a=$a.replace(" ","-")
+
 $a=$a.replace(":","-")
 
 $log = Read-Host "`nPlease provide the location to store log file"
+
 $location = "$log\Log_$a.txt"
 
 The script can be found in the github repository.
