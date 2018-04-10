@@ -4,12 +4,17 @@ Simple PowerShell script to collect the logs of exchanged mails from an Exchange
 
 In order to collect the logs, I have used the cmdlet "Get-MessageTrackingLog" and to get the mail box statistics I have used the cmdlet "Get-MailboxStatistics". There are 5 options provided for the user/admin (Exchange Admin) to analyze the logs according to the preference. They are,
 
-[1] Mails sent from _______ to _______ "
-[2] Mails sent by _______ "
-[3] Mails received by _______ "
-[4] All Logs"
-[5] Mail Box Statistics"
-[6] Exit"
+[1] Mails sent from _______ to _______ 
+
+[2] Mails sent by _______ 
+
+[3] Mails received by _______ 
+
+[4] All Logs
+
+[5] Mail Box Statistics
+
+[6] Exit
 
 If the user input wrong value for the above selection, the script will terminate by throwing error message "Exiting........"
 
